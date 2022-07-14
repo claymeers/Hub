@@ -95,6 +95,26 @@ body {
     margin-right: 15px;
 }
 
+.bell {
+    position: relative;
+}
+
+.bell::before {
+    position: absolute;
+    content: '1';
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    left: 13px;
+    top: -4px;
+}
+
 .title {
     margin-top: 40px;
     margin-bottom: 30px;
@@ -517,7 +537,7 @@ footer span {
     
     .nav_list a {
         font-size: 30px;
-        transition: all .3s ease-in-out;
+        transition: all 0.7s ease-in-out;
     }
 
     .nav_list a:hover {
@@ -531,6 +551,10 @@ footer span {
 
     footer {
         display: none;
+    }
+
+    .main {
+        margin: 0 100px;
     }
 
     .header {
@@ -599,22 +623,41 @@ footer span {
         width: 100%;
     }
 
-    .nav_list li:hover .tooltip {
-        display: flex;
-        left: 75px;
-    }
-
     .nav_list li .tooltip {
         position: absolute;
         display: none;
         justify-content: center;
         align-items: center;
-        box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
-        background: #fff;
-        border-radius: 10px;
         padding: 10px;
         left: 0px;
-        top: 0px;
-        transition: all 0.3s ease-in-out;
+        top: -5px;
+        transform: translateX(0px) scale(0);
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: all 2s ease-in-out;
+    }
+
+    .nav_list li:hover .tooltip {
+        display: flex;
+        /* left: 70px; */
+        transform: translateX(70px) scale(0.9);
+    }
+
+    .head h2 {
+        font-size: 30px;
+    }
+
+    .head p {
+        font-size: 16px;
+        color: #bdbdbd;
+    }
+
+    .tasks li {
+        font-size: 20px;
+        width: 80%;
     }
 }

@@ -639,12 +639,14 @@ footer span {
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         transition: all 2s ease-in-out;
+        opacity: 0;
     }
 
     .nav_list li:hover .tooltip {
         display: flex;
         /* left: 70px; */
         transform: translateX(70px) scale(0.9);
+        opacity: 1;
     }
 
     .head h2 {

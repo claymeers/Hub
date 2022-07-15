@@ -2,9 +2,9 @@
 
 Totally reponsive dashboard built with HTML, CSS.
 
-[Checkout the demo](https://peaceful-panda.netlify.app/)
+[Checkout the demo](https://creative-dashboard.netlify.app/)
 
-[![Image of Calc](Assets/preview.png)](https://peaceful-panda.netlify.app/)
+[![Image of Calc](Assets/preview.png)](https://creative-dashboard.netlify.app/)
 
 
 
